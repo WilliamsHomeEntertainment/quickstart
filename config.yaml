@@ -11,7 +11,7 @@
 ############################################
 
 #==================== whe_wth_test1 ====================#
-# whe_wth_test1 config created by Quickstart on 2025-06-29 18:29:32
+# whe_wth_test1 config created by Quickstart on 2025-06-30 08:33:11
 # Connected to server Plexypus version 1.41.9.9912-371133ff9
 # Running on Linux version 22.04.5 LTS (Jammy Jellyfish)
 # Plex DB cache setting: 1024 MB
@@ -68,66 +68,12 @@ libraries:
 #                                                  #
 ####################################################
     collection_files:
-    - default: oscars
+    - default: basic
       template_variables:
-        use_best_picture: true
-        radarr_add_missing_best_picture: true
-        use_best_director: false
-        radarr_add_missing_best_director: false
-        collection_mode: hide_items
-        sort_by: release.desc
-    - default: choice
-      template_variables:
-        use_best: false
-        radarr_add_missing_best: true
-        collection_mode: hide_items
-        sort_by: release.desc
-    - default: golden
-      template_variables:
-        use_best_picture: true
-        radarr_add_missing_best_picture: true
-        use_best_director: false
-        radarr_add_missing_best_director: false
-        collection_mode: default
-        sort_by: release.desc
-    - default: pca
-      template_variables:
-        use_pca: true
-        radarr_add_missing_pca: true
-        collection_mode: hide_items
-        sort_by: release.desc
-    - default: tautulli
-      template_variables:
-        use_popular: true
-        radarr_add_missing_popular: true
-        use_watched: true
-        radarr_add_missing_watched: true
-        style: color
-        collection_mode: default
-        sort_by: release.desc
-    - default: imdb
-      template_variables:
-        use_top: true
-        radarr_add_missing_top: true
-        use_popular: true
-        radarr_add_missing_popular: true
-        use_lowest: false
-        radarr_add_missing_lowest: false
-        style: color
-        collection_mode: default
-        sort_by: release.desc
-    - default: tmdb
-      template_variables:
-        use_airing: false
-        radarr_add_missing_airing: false
-        use_air: false
-        radarr_add_missing_air: false
-        use_popular: true
-        radarr_add_missing_popular: true
-        use_top: true
-        radarr_add_missing_top: true
-        use_trending: false
-        radarr_add_missing_trending: false
+        use_episodes: false
+        radarr_add_missing_episodes: false
+        use_released: false
+        radarr_add_missing_released: false
         style: color
         collection_mode: default
         sort_by: release.desc
@@ -146,21 +92,21 @@ libraries:
         use_marvel: false
         radarr_add_missing_marvel: false
         use_mcu: true
-        radarr_add_missing_mcu: true
+        radarr_add_missing_mcu: false
         use_middle: true
-        radarr_add_missing_middle: true
+        radarr_add_missing_middle: false
         use_rocky: false
         radarr_add_missing_rocky: false
         use_trek: true
-        radarr_add_missing_trek: true
+        radarr_add_missing_trek: false
         use_star: true
-        radarr_add_missing_star: true
+        radarr_add_missing_star: false
         use_mummy: false
         radarr_add_missing_mummy: false
         use_askew: false
         radarr_add_missing_askew: false
         use_wizard: true
-        radarr_add_missing_wizard: true
+        radarr_add_missing_wizard: false
         use_xmen: false
         radarr_add_missing_xmen: false
         collection_mode: hide_items
@@ -197,89 +143,9 @@ libraries:
 #                                                  #
 ####################################################
     collection_files:
-    - default: choice
-      template_variables:
-        use_best: true
-        sonarr_add_missing_best: true
-        collection_mode: hide_items
-        sort_by: release.desc
-    - default: emmy
-      template_variables:
-        use_best: true
-        sonarr_add_missing_best: true
-        collection_mode: hide
-        sort_by: release.desc
-    - default: golden
-      template_variables:
-        use_best_picture: true
-        sonarr_add_missing_best_picture: true
-        use_best_director: false
-        sonarr_add_missing_best_director: false
-        collection_mode: hide_items
-        sort_by: release.desc
-    - default: pca
-      template_variables:
-        use_pca: true
-        sonarr_add_missing_pca: true
-        collection_mode: hide_items
-        sort_by: release.desc
-    - default: tautulli
-      template_variables:
-        use_popular: true
-        sonarr_add_missing_popular: false
-        use_watched: false
-        sonarr_add_missing_watched: false
-        style: color
-        collection_mode: default
-        sort_by: release.desc
-    - default: imdb
-      template_variables:
-        use_top: true
-        sonarr_add_missing_top: false
-        use_popular: false
-        sonarr_add_missing_popular: false
-        use_lowest: false
-        sonarr_add_missing_lowest: false
-        style: color
-        collection_mode: default
-        sort_by: release.desc
     - default: franchise
       template_variables:
         collection_mode: hide_items
-        sort_by: release.desc
-    - default: universe
-      template_variables:
-        use_avp: false
-        sonarr_add_missing_avp: false
-        use_arrow: false
-        sonarr_add_missing_arrow: false
-        use_dca: false
-        sonarr_add_missing_dca: false
-        use_dcu: false
-        sonarr_add_missing_dcu: false
-        use_fast: false
-        sonarr_add_missing_fast: false
-        use_marvel: false
-        sonarr_add_missing_marvel: false
-        use_mcu: true
-        sonarr_add_missing_mcu: true
-        use_middle: true
-        sonarr_add_missing_middle: true
-        use_rocky: false
-        sonarr_add_missing_rocky: false
-        use_trek: true
-        sonarr_add_missing_trek: false
-        use_star: true
-        sonarr_add_missing_star: false
-        use_mummy: false
-        sonarr_add_missing_mummy: false
-        use_askew: false
-        sonarr_add_missing_askew: false
-        use_wizard: false
-        sonarr_add_missing_wizard: false
-        use_xmen: false
-        sonarr_add_missing_xmen: false
-        collection_mode: default
         sort_by: release.desc
 
 #########################################
@@ -312,7 +178,7 @@ settings:
   asset_folders: true
   cache: true
   cache_expiration: 60
-  create_asset_folders: false
+  create_asset_folders: true
   custom_repo:
   default_collection_order: release.asc
   delete_below_minimum: true
@@ -340,7 +206,7 @@ settings:
   save_report: false
   show_asset_not_needed: true
   show_filtered: false
-  show_missing: true
+  show_missing: false
   show_missing_assets: true
   show_missing_episode_assets: false
   show_missing_season_assets: false
@@ -452,20 +318,20 @@ notifiarr:
 #                                    #
 ######################################
 radarr:
-  add_existing: true
-  add_missing: true
+  add_existing: false
+  add_missing: false
   availability: announced
   ignore_cache: false
-  monitor: true
+  monitor: false
   monitor_existing: false
   plex_path:
   quality_profile: (Guide) Remux + WEB 1080p
   radarr_path:
   root_folder_path: /mnt/pve/Plex-Media/media/movies
-  search: true
+  search: false
   tag:
   token: e984928b596a4b18947b4f078cd7fc49
-  upgrade_existing: true
+  upgrade_existing: false
   url: http://192.168.99.223:7878
 
 #######################################
@@ -477,12 +343,12 @@ radarr:
 #                                     #
 #######################################
 sonarr:
-  add_existing: true
-  add_missing: true
+  add_existing: false
+  add_missing: false
   cutoff_search: false
   ignore_cache: false
   language_profile: English
-  monitor: future
+  monitor: all
   monitor_existing: false
   plex_path:
   quality_profile: (Guide) WEB-1080p (Alternative)
@@ -493,5 +359,5 @@ sonarr:
   sonarr_path:
   tag:
   token: fdd234bb5d8444febe41e974e8740966
-  upgrade_existing: true
+  upgrade_existing: false
   url: http://192.168.99.224:8989
